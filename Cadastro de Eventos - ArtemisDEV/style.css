@@ -1,0 +1,103 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4%;
+        }
+
+        #logo {
+            margin-top: 20px;
+        }
+
+        body {
+            background-color: lightgray;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        input {
+            text-align: center;
+        }
+
+        label ::placeholder {
+            text-align: center;
+        }
+
+        section {
+            margin: 20px;
+            padding: 16px;
+            max-width: 640px;
+            display: relative;
+        }
+
+        section div {
+            padding: 8px;
+        }
+
+        section img {
+            display: absolute;
+            border-radius: 8px;
+            max-width: 620px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        #evento {
+            padding: 16px;
+            background-color: #c8cbc1;
+            border-radius: 8px;
+        }
+
+        .campo {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid black;
+            width: 40%;
+        }
+
+        .lotacao {
+            cursor: pointer;
+            margin: 8px;
+        }
+
+        .botao {
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            width: 120px;
+            padding: 8px;
+            margin: 8px;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+
+        .botao:hover {
+            background-color: gray;
+            border: none;
+        }
+        
+        #eventos_registrados {
+            display: relative;
+            margin: auto;
+        }
+        
+        #eventos {
+            display: absolute;  
+            background-color: #c8cbc1;
+            justify-content: center;
+            border-radius: 8px;
+        }

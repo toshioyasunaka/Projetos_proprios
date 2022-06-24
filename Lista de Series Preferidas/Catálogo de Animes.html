@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catálogo de Animes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1 id="h1Header">Catálogo de Animes Assistidos</h1>
+            <img src="https://wallpaperaccess.com/full/1217357.jpg">
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div id="formsField">
+            <div class="inputBox">
+                <label>Anime: </label>
+                <input type="text" id="inputName" placeholder="Insira o nome do anime">
+            </div>
+
+            <div class="inputBox">
+                <label>Imagem: </label>
+                <input type="text" id="inputImg" placeholder="Passe a URL .jpg ou .png">
+            </div>
+
+            <div class="inputBox">
+                <label>Nota: </label>
+                <input type="number" id="inputScore" placeholder="Dê a nota para o anime">
+            </div>
+
+            <button id="addButton" onclick="catalog.addAnime()">Adicionar</button>
+            <button id="confirmButton" onclick="catalog.confirmAnimeEdit()">Confirmar</button>
+
+        </div>
+
+        <div id="imageContainer">
+            <div id="select">
+                <label for="select">Classificar por: </label>
+                <select id="sortingOptions" onchange="catalog.sortingOptions()">
+                    <option value="name">Nome</option>
+                    <option value="score">Nota</option>
+                    <option value="older">Mais antigos</option>
+                    <option value="mostRecent" selected>Últimos Adicionados</option>
+                </select>
+            </div>
+            <div id="block"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

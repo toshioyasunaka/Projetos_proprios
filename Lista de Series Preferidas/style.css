@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+}
+
+.header {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 1px rgb(0, 0, 0);
+    height: 80px;
+    position: relative;
+}
+
+#h1Header {
+    margin-top: 25px;
+}
+
+.header img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+
+body {
+    background-image: url('https://mocah.org/thumbs/926203-anime-minimalism-black-dark-white-One-Piece.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: -230px bottom;
+    background-color: black;
+}
+
+.container {
+    width: 800px;
+    background-color: rgba(255, 255, 255, 0.438);
+    display: flex;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#select {
+    cursor: pointer;
+    padding: 5px;
+    height: 18px;
+    width: 250px;
+    text-align: center;
+    display: inline-flex;
+    background-color: rgb(206, 206, 206);
+    justify-content: space-between;
+    display: none;
+}
+
+#formsField {
+    text-align: center;
+}
+
+input {
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.inputBox {
+    margin-top: 10px;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+#addButton {
+    display: inline;
+}
+
+#confirmButton {
+    display: none;
+}
+
+#block {
+    width: 600px;
+}
+
+#individualBlock {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.normal {
+    float: left;
+    font-size: 20px;
+    padding: 10px;
+    height: 180px;
+    width: 182px;
+}
+
+.inverse {
+    float: right;
+    font-size: 20px;
+    padding: 10px;
+    height: 180px;
+    width: 182px;
+}
+
+.imageBlock img {
+    border-radius: 10px;
+    width: 398px;
+    height: 200px;
+    display: inline;
+}
+
+#imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#textBlock {
+    text-align: center;
+}
+
+#editButton {
+    padding: 2px;
+}

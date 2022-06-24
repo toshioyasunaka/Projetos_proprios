@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <title>Projeto do artemis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sistemas de Eventos</h1>
+        <div id="logo">
+            <a href="https://liveseo.com.br/artemis-program/" target="_blank">
+                <img src="https://liveseo.com.br/wp-content/uploads/2022/04/artemis-dev-logo.png">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="evento">
+            <h2>Cadastro de Eventos</h2>
+            <div id="img">
+                <img
+                    src="https://images.pexels.com/photos/382297/pexels-photo-382297.jpeg">
+            </div>
+            <h3>Cadastre o evento aqui!</h3>
+
+            <form>
+                <div>
+                    <label>
+                        Nome: <br>
+                        <input type="text" class="campo" id="nome" placeholder="Digite o nome do evento">
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        Data: <br>
+                        <input type="date" class="campo" id="data" placeholder="Digite a data do evento">
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        Local: <br>
+                        <input type="local" class="campo" id="local" placeholder="Digite o local do evento">
+                    </label>
+                </div>
+
+                <div>
+                    <label class="lotacao">
+                        Lotação: <br>
+                        <input type="radio" name="lotacao" class="lotacao" value="ate1000"> Até 1.000 pessoas <br>
+                    </label class="lotacao">
+
+                    <label class="lotacao">
+                        <input type="radio" name="lotacao" class="lotacao" value="ate5000"> De 1.001 a 5.000 pessoas <br>
+                    </label>
+
+                    <label class="lotacao">
+                        <input type="radio" name="lotacao" class="lotacao" value="ate10000"> De 5.001 a 10.000 pessoas <br>
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        <input type="checkbox" class="checkbox_termos"> Eu li e concordo com os <a href="#">termos e
+                            condições</a>.
+                    </label>
+                </div>
+
+                <div>
+                    <input type="button" value="Limpar" class="botao" onclick="limparCampos()">
+                    <button type="button" class="botao" onclick="registrarEvento()">Inscrever-se</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <hr>
+
+    <section id="eventos_registrados">
+        <div id="eventos">Nenhum evento registrado ainda, seja o primeiro :)</div>
+    </section>
+    <hr>
+
+    <footer>
+        <a href="https://liveseo.com.br/" target="_blank">
+            <img
+                src="https://liveseo.com.br/wp-content/uploads/2019/08/cropped-logo-principal-agencia-liveseo-184x114.png">
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
